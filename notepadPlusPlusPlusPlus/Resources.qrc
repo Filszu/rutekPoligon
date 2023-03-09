@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>src/Icons/Copy.bmp</file>
+        <file>src/Icons/Cut.bmp</file>
+        <file>src/Icons/DeleteSticky.bmp</file>
+        <file>src/Icons/favicon.ico</file>
+        <file>src/Icons/Highlight.bmp</file>
+        <file>src/Icons/New.bmp</file>
+        <file>src/Icons/Open.bmp</file>
+        <file>src/Icons/Paste.bmp</file>
+        <file>src/Icons/Save.bmp</file>
+        <file>src/Icons/Sticky.bmp</file>
+        <file>src/Icons/Turtle.png</file>
+    </qresource>
+</RCC>

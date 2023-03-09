@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad#    by Filszu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>524</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item>
+       <widget class="QTextEdit" name="textEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>524</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menunew">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionnew"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="actionprint"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actioncopy"/>
+    <addaction name="actionpaste"/>
+    <addaction name="actionundo"/>
+    <addaction name="actionredo"/>
+   </widget>
+   <addaction name="menunew"/>
+   <addaction name="menuedit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/Open.bmp</normaloff>:/imgs/src/Icons/Open.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/New.bmp</normaloff>:/imgs/src/Icons/New.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/Save.bmp</normaloff>:/imgs/src/Icons/Save.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>save as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/Turtle.png</normaloff>:/imgs/src/Icons/Turtle.png</iconset>
+   </property>
+   <property name="text">
+    <string>print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/DeleteSticky.bmp</normaloff>:/imgs/src/Icons/DeleteSticky.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/Copy.bmp</normaloff>:/imgs/src/Icons/Copy.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/src/Icons/Paste.bmp</normaloff>:/imgs/src/Icons/Paste.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
